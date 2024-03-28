@@ -1,5 +1,8 @@
-ro.adb.secure=0
-ro.boot.avb_version=1.1
-ro.boot.vbmeta.avb_version=1.1
-ro.vendor.mediatek.platform=MT6765
-ro.product.product.device=RMX2185
+ro.mediatek.platform=MT6785
+ro.hardware=mt6785
+ro.hardware.kmsetkey=beanpod
+ro.hardware.gatekeeper=beanpod
+ro.mtk_tee_gp_support=1
+ro.mtk_microtrust_tee_support=1
+ro.crypto.volume.filenames_mode=aes-256-cts
+fbe.metadata.wrappedkey=true
