@@ -27,9 +27,6 @@ system_ext /system_ext ext4 ro wait,,avb,logical,first_stage_mount
 odm /odm erofs ro wait,,logical,first_stage_mount,nofail
 odm /odm ext4 ro wait,,logical,first_stage_mount,nofail
 
-/dev/block/by-name/oplusreserve2 /mnt/vendor/oplusreserve ext4 nosuid,nodev,noatime,barrier=1 wait,check,first_stage_mount,nofail
-/dev/block/by-name/oplusreserve2 /mnt/oplus/op2 ext4 nosuid,nodev,noatime,barrier=1 check,first_stage_mount,nofail
-
 /dev/block/by-name/metadata /metadata ext4 noatime,nosuid,nodev,discard wait,check,formattable,first_stage_mount
 
 
