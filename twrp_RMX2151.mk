@@ -39,8 +39,6 @@ PRODUCT_BRAND := realme
 PRODUCT_MODEL := Realme 7
 PRODUCT_MANUFACTURER := realme
 
-
-
 # Additional target Libraries
 TARGET_RECOVERY_DEVICE_MODULES += \
     libkeymaster4 \
