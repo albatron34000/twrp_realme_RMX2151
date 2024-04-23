@@ -38,8 +38,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
 $(OUT_DIR)/target/product/RMX2151/vendor/bin/hw/android.hardware.gatekeeper@1.0-service:$(TARGET_COPY_OUT_RECOVERY)/root/system/bin/android.hardware.gatekeeper@1.0-service
 
-PRODUCT_COPY_FILES += \
-$(OUT_DIR)/target/product/RMX2151/vendor/bin/hw/vendor.oplus.hardware.cryptoeng@1.0-service:$(TARGET_COPY_OUT_RECOVERY)/root/system/bin/hw/vendor.oplus.hardware.cryptoeng@1.0-service
+#PRODUCT_COPY_FILES += \
+#$(OUT_DIR)/target/product/RMX2151/vendor/bin/hw/vendor.oplus.hardware.cryptoeng@1.0-service:$(TARGET_COPY_OUT_RECOVERY)/root/system/bin/hw/vendor.oplus.hardware.cryptoeng@1.0-service
 
 # Additional Libraries
 TARGET_RECOVERY_DEVICE_MODULES += \
