@@ -6,8 +6,8 @@
 /recovery         emmc     /dev/block/by-name/recovery                flags=backup=1;display="Recovery"
 /vbmeta           emmc     /dev/block/by-name/vbmeta                  flags=backup=1;display="VBMeta";flashimg=1
 
-/dev/block/platform/bootdevice/by-name/userdata /data                  ext4    noatime,nosuid,nodev,noauto_da_alloc,errors=panic,inlinecrypt latemount,wait,check,formattable,quota,reservedsize=128m,fileencryption=aes-256-xts
-/dev/block/platform/bootdevice/by-name/userdata  /data                 f2fs    noatime,nosuid,nodev,discard,noflush_merge,reserve_root=134217,resgid=1065,fsync_mode=nobarrier,inlinecrypt latemount,wait,check,formattable,quota,reservedsize=128m,fileencryption=aes-256-xts
+/dev/block/platform/bootdevice/by-name/userdata /data                  ext4    noatime,nosuid,nodev,noauto_da_alloc,errors=panic,inlinecrypt latemount,wait,check,formattable,quota,reservedsize=128m,fileencryption=aes-256-xts:aes-256-cts:v2
+/dev/block/by-name/userdata /data f2fs noatime,nosuid,nodev,discard,noflush_merge,fsync_mode=nobarrier,reserve_root=134217,resgid=1065,inlinecrypt wait,check,formattable,quota,reservedsize=128m,latemount,resize,checkpoint=fs,fileencryption=aes-256-xts:aes-256-cts:v2+inlinecrypt_optimized,keydirectory=/metadata/vold/metadata_encryption,fsverity
 /metadata         ext4     /dev/block/by-name/md_udc                   flags=display="Metadata"
 
 /protect_f        ext4    /dev/block/by-name/protect1                 flags=display="Protect_F";backup=1;
