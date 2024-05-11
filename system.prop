@@ -8,6 +8,11 @@ ro.sys.usb.storage.type=mtp
 ro.crypto.volume.filenames_mode=aes-256-cts
 fbe.metadata.wrappedkey=true
 
+ro.crypto.allow_encrypt_override=true
+ro.crypto.dm_default_key.options_format.version=2
+ro.crypto.volume.metadata.method=dm-default-key
+ro.crypto.volume.options=::v2
+
 # TEE
 ro.vendor.mtk_tee_gp_support=1
 ro.vendor.mtk_microtrust_tee_support=1
